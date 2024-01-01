@@ -14,3 +14,6 @@ Fixed UI bug in the profile page 2024-01-25 16:00:00
 Added support for multi-language feature 2024-01-28 11:20:00
 Improved error handling in backend APIs 2024-01-30 09:00:00
 Final review and preparation for release 2024-02-01 10:30:00
+Final review and preparation for release 2024-02-01 10:30:00
+Final review and preparation for release 2024-02-02 10:30:00
+Final review and preparation for release 2024-02-03 10:30:00
