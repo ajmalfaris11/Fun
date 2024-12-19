@@ -8,7 +8,7 @@ REM Set the directory of your Git repository (update this to your actual path)
 set REPO_DIR=C:\Users\ajmal_inv2bct\Downloads\Fun-main\Fun-main
 
 REM Set the message template for the fake commit
-set COMMIT_MESSAGE="Automated commit"
+set COMMIT_MESSAGE="this how set up automated commit code"
 
 REM Get the current date in the format YYYY-MM-DD
 for /F "tokens=2 delims==" %%I in ('"wmic os get localdatetime /value"') do set datetime=%%I
