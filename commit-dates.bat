@@ -6,10 +6,17 @@ for /f "tokens=*" %%a in (commit-messages.txt) do (
     set "MESSAGE=%%a"
 
     :: Extract the commit date from the message
-    for /f "tokens=3*" %%b in ("%%a") do set "DATE=%%b"
+    for /f "tokens=1,2*" %%b in ("%%a") do set "DATE=%%c"
 
     :: Create a dummy file for the commit
     echo Dummy commit for !DATE! > dummy.txt
+
+    :: Check if the file is created (optional debug step)
+    if exist dummy.txt (
+        echo Dummy.txt created successfully.
+    ) else (
+        echo Failed to create dummy.txt.
+    )
 
     :: Add the file to git
     git add dummy.txt
